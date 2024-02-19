@@ -153,6 +153,11 @@ header nav a:hover span
     animation: nav-animate 1s forwards;
 }
 
+header .btn-common
+{
+    margin-top: 0px;
+}
+
 @keyframes nav-animate {
     from {
         transform: translateY(-30px);
