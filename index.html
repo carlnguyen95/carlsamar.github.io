@@ -25,6 +25,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
+    <!-- SLICK CSS -->
+    <link rel="stylesheet" href="./css/slick/slick.css" />
+    <link rel="stylesheet" href="./css/slick/slick-theme.css" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -330,7 +334,21 @@
             </div>
           </div>
           <div class="blog__item">
-            <img src="./img/pic1_1.jpg" alt="">
+            <img src="./img/pic2.jpg" alt="">
+            <p class="blog__date">23 MARCH 2022</p>
+            <div class="blog__summary">
+              <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quasi sapiente, cum in illum sed!</p>
+            </div>
+            <div class="blog__item__footer">
+              <i class="fa-regular fa-circle-user"></i>
+              <p>BY <span>JOHN DOE</span></p>
+              <i class="fa-regular fa-comments"></i>
+              <p>COMMENTS 15</p>
+            </div>
+          </div>
+          <div class="blog__item">
+            <img src="./img/pic3.jpg" alt="">
             <p class="blog__date">23 MARCH 2022</p>
             <div class="blog__summary">
               <h2>Lorem ipsum dolor sit amet consectetur.</h2>
@@ -357,6 +375,34 @@
               <p>COMMENTS 15</p>
             </div>
           </div>
+          <div class="blog__item">
+            <img src="./img/pic2.jpg" alt="">
+            <p class="blog__date">23 MARCH 2022</p>
+            <div class="blog__summary">
+              <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quasi sapiente, cum in illum sed!</p>
+            </div>
+            <div class="blog__item__footer">
+              <i class="fa-regular fa-circle-user"></i>
+              <p>BY <span>JOHN DOE</span></p>
+              <i class="fa-regular fa-comments"></i>
+              <p>COMMENTS 15</p>
+            </div>
+          </div>
+          <div class="blog__item">
+            <img src="./img/pic3.jpg" alt="">
+            <p class="blog__date">23 MARCH 2022</p>
+            <div class="blog__summary">
+              <h2>Lorem ipsum dolor sit amet consectetur.</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quasi sapiente, cum in illum sed!</p>
+            </div>
+            <div class="blog__item__footer">
+              <i class="fa-regular fa-circle-user"></i>
+              <p>BY <span>JOHN DOE</span></p>
+              <i class="fa-regular fa-comments"></i>
+              <p>COMMENTS 15</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -364,14 +410,14 @@
     <!-- FOOTER -->
     <footer>
       <div class="container">
-        <div class="footer__subscribe">
+        <div class="footer__subscribe animate__fadeInUp">
           <h2>Subscribe To Our Newsletter</h2>
           <form>
             <input type="email" placeholder="Your Email Address"><button><i class="fa-regular fa-paper-plane"></i></button>
           </form>
         </div>
         <div class="footer__list">
-          <div class="footer__contact">
+          <div class="footer__contact animate__fadeIn animate__delay-2s">
             <a href="#">
               <img src="./img/logo-white.png" alt="">
             </a>
@@ -390,7 +436,7 @@
               </li>
             </ul>
           </div>
-          <div class="footer__items">
+          <div class="footer__items animate__fadeIn animate__delay-2s">
             <h3 class="footer__items__title">Our links</h3>
             <ul class="footer__items__content">
               <li class="footer__item">
@@ -443,12 +489,27 @@
       </div>
     </footer>
 
-    <!-- COUTING UP JS -->
     <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      src="https://code.jquery.com/jquery-1.12.4.js"
+      integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
       crossorigin="anonymous"
     ></script>
+
+    <!-- SLICK -->
+    <script src="./js/slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".blog__content").slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          arrows: false,
+          dots: false,
+        });
+      });
+    </script>
+
+    <!-- COUTING UP JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="./js/jquery.countup.js"></script>
     <script>
@@ -457,5 +518,6 @@
         delay: 2,
       });
     </script>
+
   </body>
 </html>

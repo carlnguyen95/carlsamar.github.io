@@ -56,6 +56,13 @@ body
 
 .animate__fadeInUp
 {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.animate__fadeInUp
+{
     animation-name: fadeInUp;
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -102,10 +109,6 @@ body
     margin-bottom: 10px;
 }
 
-section
-{
-    background-color: rgba(224, 206, 205, 0.1);
-}
 
 /* HEADER */
 header 
@@ -236,6 +239,7 @@ header .btn-common
 
 .services__item
 {
+    box-shadow: 0 0px 60px 0px rgb(0 0 0 / 10%);
     background-color: #fff;
     border-radius: 20px;
 }
@@ -283,9 +287,10 @@ header .btn-common
 
 .about__detail__left  img
 {
-    width: 80%;
+    width: 100%;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
+    transform: translateX(-20%);
 }
 
 .about__detail__right
@@ -370,6 +375,7 @@ header .btn-common
 
 .features__item
 {
+    box-shadow: 0 0px 60px 0px rgb(0 0 0 / 10%);
     background-color: white;
     border-radius: 15px;
     display: flex;
@@ -552,17 +558,18 @@ header .btn-common
 
 .blog__content
 {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 30px; */
 }
 
 
 .blog__item
-{
+{   
     background-color: rgba(245, 95, 141, 0.1);
     border-radius: 10px;
     position: relative;
+    margin-right: 20px;
 }
 
 .blog__item img
@@ -718,6 +725,7 @@ footer::before
     margin-top: 80px;
     display: flex;
     position: relative;
+    animation: fadeIn 3s both;
 }
 
 
@@ -769,7 +777,8 @@ footer::before
     position: relative;
 }
 
-.footer__items h3::before, h3::after
+.footer__items h3::before, 
+.footer__items h3::after
 {
     content: "";
     position: absolute;
@@ -783,7 +792,7 @@ footer::before
 
 .footer__items h3::after
 {
-    width: 60px;
+    width: 50px;
     left: 35px;
 }
 
