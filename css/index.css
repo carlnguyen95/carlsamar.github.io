@@ -873,3 +873,35 @@ footer::before
     color: white;
     font-size: 20px;
 }
+
+/* BACK TO TOP */
+.back__to__top
+{
+    background-color: #F55F8D;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-align: center;
+    line-height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 5px;
+    visibility: hidden;
+}
+
+.back__to__top i
+{
+    color: white;
+}
+
+.cd-top--is-visible
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top--fade-out
+{
+    opacity: 5;
+}
