@@ -501,6 +501,7 @@ header .btn-common
   width: 50%;
   height: 100%;
   position: absolute;
+  display: block;
   top: 0;
   left: -100%;
   background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
@@ -525,17 +526,17 @@ header .btn-common
     transition: all 1s;
 }
 
-.portfolio__detail__overlay:hover
+.portfolio__detail__item:hover .portfolio__detail__overlay
 {
     opacity: 1;
 }
 
-.portfolio__detail__overlay:hover .overlay__description
+.portfolio__detail__item:hover .overlay__description
 {
     animation: fadeInUp 1s both;
 }
 
-.portfolio__detail__overlay:hover i
+.portfolio__detail__item:hover  .portfolio__detail__overlay i
 {
     animation: fadeInTopRight 1s both;
 }
